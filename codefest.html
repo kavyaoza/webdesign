@@ -1,0 +1,250 @@
+<html>
+ 
+<head>
+    <title>
+        Simple web development
+    </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+    }
+ 
+    .background {
+        background: black;
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+ 
+    .nav-list {
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+ 
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .logo img {
+        width: 180px;
+        border-radius: 50px;
+    }
+ 
+    .nav-list li {
+        list-style: none;
+        padding: 26px 30px;
+    }
+ 
+    .nav-list li a {
+        text-decoration: none;
+        color: white;
+    }
+ 
+    .nav-list li a:hover {
+        color: grey;
+    }
+ 
+    .rightnav {
+        width: 30%;
+        text-align: right;
+    }
+ 
+    #search {
+        padding: 5px;
+        font-size: 17px;
+        border: 2px solid lightcoral;
+        border-radius: 9px;
+    }
+ 
+    .firstsection {
+        background-color: lightgreen;
+        border-radius: 9px;
+    }
+ 
+    .secondsection {
+        background-color: lightpink;
+        border-radius: 9px;
+    }
+ 
+    .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        max-width: 80%;
+        margin: auto;
+        height: 80%;
+    }
+ 
+    .firsthalf {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+ 
+    .secondhalf {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+       
+    }
+ 
+    .secondhalf img {
+        width: 70%;
+        border: 4px solid white;
+        border-radius: 150px;
+        display: block;
+        margin: auto;
+    }
+ 
+    .text-big {
+        font-family: 'Piazzolla', serif;
+        font-weight: bold;
+        font-size: 35px;
+    }
+ 
+    .text-small {
+        font-size: 18px;
+      
+    }
+ 
+    .btn {
+        padding: 8px 20px;
+        margin: 7px 0;
+        border: 2px solid white;
+        border-radius: 8px;
+        background: none;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    .btn-sm {
+        padding: 6px 10px;
+        vertical-align: middle;
+    }
+ 
+    .section {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background-color: lightsalmon;
+    }
+ 
+    .section-Left {
+        flex-direction: row-reverse;
+    }
+ 
+    .paras {
+        padding: 0px 65px;
+    }
+ 
+    .thumbnail img {
+        width: 250px;
+        border: 2px solid black;
+        border-radius: 26px;
+        margin-top: 19px;
+    }
+ 
+    .center {
+        text-align: center;
+    }
+ 
+    .text-footer {
+        text-align: center;
+        padding: 30px 0;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+</style>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <li><a href="statueodunity">STATUE OF UNITY</a></li>
+            <li><a href="#hiking">HIKING</a></li>
+            <li><a href="#bank">THE WALLET BANK</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+ 
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                   STUATUE OF UNITY
+                </h1>
+                 
+                <p class="text-small">
+                    The Statue of Unity is the world's tallest statue, with a height of 182 metres (597 feet),[3] located near Kevadia in the state of Gujarat, India. It depicts Indian statesman and independence activist Vallabhbhai Patel (1875–1950), who was the first deputy prime minister and home minister of independent India and an adherent of Mahatma Gandhi. Patel is highly respected for his leadership in uniting 562 princely states of India to form the single Union of India. The statue is located in Gujarat on the Narmada River in the Kevadiya colony, facing the Sardar Sarovar Dam 100 kilometres (62 mi) southeast of the city of Vadodara.[4]
+
+                </p>
+                <div class="thumbnail">
+                    <img src="C:\Users\Admin\Downloads\statue.jpg">
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondhalf">
+                <h1 class="text-big" id="program">HIKING </h1>
+
+                <p class="text-small">
+                    Hiking is basic to many sporting activities and is also a widely recommended and practiced form of physical training. For example, hiking constitutes a large part of mountain climbing; experienced mountaineers know that they must train themselves for the long, arduous hikes over the lower trails and across glaciers and snowfields. Backpack camping, hunting, cross-country skiing and snowshoeing, and orienteering are other sports and sporting activities in which hiking is important. The ability to walk considerable distances without becoming overtired (an ability generally acquired through practice) also enhances the enjoyment of such other activities as bird-watching, nature walks, field trips of all sorts, and even sightseeing.
+                </p>
+ 
+                <div class="thumbnail">
+                    <img src="C:\Users\Admin\Downloads\hiking.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">THE WALLET BANK</h1>
+ 
+            <p class="sectionSubTag text-small">
+                A digital wallet (or electronic wallet) is a financial transaction application that runs on mobile devices. It securely stores your payment information and passwords. These applications allow you to pay when you're shopping using your device so that you don't need to carry your cards around. You enter and store your credit card, debit card, or bank account information and can then use your device to pay for purchases.
+
+
+            </p>
+ 
+ 
+        </div>
+ 
+        <div class="thumbnail">
+            <img src="C:\Users\Admin\Downloads\wallet.jpg">
+        </div>
+    </section>
+ 
+
+</body>
+ 
+</html>
